@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course</title>
+    <title>Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <!-----course----->
+        <!-----services----->
 
     <section class="services">
 
@@ -16,17 +16,23 @@
               <h2 class="logo">QUANTUM SOLUTIONS LIMITED.</h2>
             </a>
 
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Our Services</a></li>
-            <li><a href="Office.html">Office</a></li>
-            <li><a href="About us.html">About us</a></li>
-            <li><a href="Goals.html">Goals</a></li>
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Office.html">Office</a></li>
+                <li><a href="About-us.html">About us</a></li>
+                <li><a href="Goals.html">Goals</a></li>
+              </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu('nav-links')"></i>
+
         </nav>
         <h1>Our Services.</h1>
         <h2>Whatever the project size or scope, our principles stay the same. Our Research, Design, Build framework is tried, tested and proven.</h2>
 
-        <div class="row">
+        <div class="services-row">
             <div class="services-col">
                 <h3>IT Consulting & Advisory</h3>
                 <p>We support organisations in making more effective use of technology. We also help in evaluating current technologies and related policies, assess staff knowledge and support needs. Tell us about your business requirements in the form below.</p>
@@ -42,8 +48,6 @@
         </div>
 
     </section>
-
-
      <script src="script.js"></script>
 </body>
 </html>
