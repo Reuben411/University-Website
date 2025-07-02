@@ -8,14 +8,24 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.toggle('active');
         navLinks.classList.toggle('active');
 
+     // Update aria-expanded attribute
+     const isExpanded = this.getAttribute('aria-expanded') === 'true';
+     this.setAttribute('aria-expanded', !isExpanded);
+
+     // Toggle body scroll
+     document.body.classList.toggle('menu-open', isExpanded);
+
+         // Toggle body scroll
+     document.body.classList.toggle('menu-open', isExpanded);
+
     });
 
     // Close menu when clicking on links
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click',function () {
-            hamburger.classList.remove('active')
+        link.addEventListener('click', () =>  {
+            hamburger.classList.remove('active');
             navLinks.classList.remove('active');
-            document.body.style.overflow = '';
+            hamburger.setAttribute('aria-expanded', 'false');
         });
     });
 });

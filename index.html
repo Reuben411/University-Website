@@ -18,22 +18,20 @@
     <link rel="prefetch" href="Goals.html" as="document">
  </head>
   <body>
-    <div class="video-background">
-      <video autoplay loop muted playsinline id="background-video">
-       <source src="Eduford-Assets/Video.mp4" type="video/mp4">
-      </video>
       <section class="header">
-        <nav>
-          <a href="index.html">
-            <h2 class="logo">QUANTUM SOLUTIONS LIMITED</h2>
-          </a>
-          <!-- Mobile Menu Button -->
-          <div class="hamburger" id="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-
-           <!-- Desktop Navigation -->
+        <div class="video-background">
+        <video autoplay loop muted playsinline id="background-video">
+          <source src="Eduford-Assets/Video.mp4" type="video/mp4">
+        </video>
+        <nav class="index-nav">
+          <a href="index.html" class="logo">QUANTUM SOLUTIONS LIMITED</a>
+          <!-- Hamburger Button -->
+          <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+           <!-- Desktop Navigation-links -->
           <div class="nav-links" id="navLinks">
               <ul>
                 <li><a href="index.html">Home</a></li>
