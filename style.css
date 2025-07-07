@@ -21,7 +21,7 @@
   left: -13rem;
   object-fit: cover;
   object-position: center;
-  backdrop-filter: blur(5px);
+  filter: blur(2px);
 
 }
 
@@ -120,14 +120,14 @@
 .text-box{
   min-width: 100%;
   position: relative;
-  margin-top: 2%;
-  top: 40%;
+  top: 38%;
   transform: translateY(-50%);
   text-align: center;
 }
 .header .text-box p{
   color: whitesmoke;
   font-weight: 800;
+  padding-top: 2%;
   font-size: 1.5rem;
   margin: 10px 0 40px;
 }
@@ -150,25 +150,7 @@
   border: 1px solid #f44336;
   background: #f44336;
   transition: 1s;
-
 }
-/*.hamburger {
- display: none;
- cursor: pointer;
- background: transparent;
- border: none;
- padding: 5px;
- z-index: 1000;
-
-}
-.hamburger .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  background: white;
-  transition: all 0.3s ease;
-}*/
 .hamburger {
   position: relative;
   display: none;
@@ -248,7 +230,9 @@
     top: 0;
     z-index: 1000;
     background: transparent;
-
+  }
+  .index-nav .nav-links a {
+    color: black;
   }
   .global-nav{
     position: fixed;
@@ -348,7 +332,7 @@
   }
   .text-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
 
   }
@@ -363,7 +347,7 @@
     position: relative;
     padding-top: 1rem;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
   }
   .services h1{
     margin-top: 3.5rem;
@@ -397,7 +381,7 @@
     padding-top: 0;
   }
   .services-col p {
-    font-size: 1rem;
+    font-size: 20px;
     line-height: 1.5;
     padding-top: 0;
   }
@@ -427,6 +411,25 @@
     position: relative;
     gap:2rem;
   }
+  .more-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: brown;
+  }
+  .more-nav .logo {
+    margin-left: 17rem;
+    position: absolute;
+    display: block;
+    font-size: 20px;
+  }
+  .more-nav .hero-btn {
+  margin-right: -2rem;
+  position: relative;
+  }
+  .more .text-box {
+    padding-top: 5rem;
+  }
 
 }
 
@@ -452,13 +455,13 @@
 .services h2{
   text-align: center;
   color:white ;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 200;
   margin-top: 1%;
 }
 .services p{
   color: black;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 15px;
   padding-bottom: 10px;
@@ -503,21 +506,6 @@
 .services-col:hover{
   box-shadow: 0 0 20px 0px rgb(0, 0,0,0.8);
 }
-/*@media(max-width: 769px){
-  .hamburger {
-    display: block;
-  }
-      /* Hamburger to X Animation *//*
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-}*/
 
 /*----- Office -----*/
 
@@ -615,7 +603,8 @@
 .About-us p{
   position: relative;
   text-align: center;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
   line-height: 1.4;
   color: #fff;
 
@@ -797,10 +786,90 @@
   cursor: pointer;
   padding: 18px 0;
 }
-.copyright {
-  position: ;
-}
 .fa-heart-o{
   color: #f44336;
   display: block;
+}
+
+  /*More info*/
+.more {
+  position: absolute;
+  text-align: center;
+  background-color: gray;
+  backdrop-filter: blur(5px);
+  padding: 4%;
+}
+.more-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: brown;
+}
+.more-nav .logo {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  margin-right: 2rem;
+}
+.more-nav .hero-btn {
+  margin-left: 2rem;
+}
+.more-nav a {
+  text-decoration: none;
+}
+.more .hero-btn {
+  margin-top: 2%;
+}
+.more h2 {
+  padding: 1%;
+  font-size: 1.8rem;
+}
+.more p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.more .text-box {
+  position: relative;
+  margin-top: 4%;
+}
+.more h1 {
+  font-size: 3rem;
+  color:goldenrod;
+}
+.more h3 {
+  padding: 2%;
+  text-align: left;
+  position: relative;
+  font-size: 2rem;
+  color: brown;
+}
+.more ul strong {
+  font-size: 25px;
+  color: goldenrod;
+}
+.more li {
+  text-align: left;
+  padding: 1.5%;
+  font-size: 18px;
+  font-weight: 600;
+}
+.more .icons .fa{
+  color: brown;
+  margin: 0 25px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 0;
+
+}
+.more .icons i {
+  font-size: 30px;
+}
+.more .copyright {
+  margin-top: 2px;
+}
+.more .copyright p {
+  font-size: 16px;
+  font-weight: 400;
 }
